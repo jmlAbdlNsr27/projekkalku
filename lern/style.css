@@ -1,0 +1,161 @@
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Memberikan jarak antar item navbar */
+}
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Menghilangkan margin pada item terakhir */
+}
+.nav-link {
+  padding: 10 15px; /* Menambahkan padding pada link untuk membuatnya lebih lebar */
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000;
+  background-color: #b8860b;
+  border-radius: 5px;
+}
+.custom-brand {
+  color: #b8860b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.custom-brand:hover {
+  color: #b8860b;
+}
+
+.nav-link {
+  color: #f8f9fa; /* Warna teks default navbar */
+  text-decoration: none; /* Hilangkan underline default */
+  position: relative; /* Dibutuhkan untuk pseudo-element */
+}
+.nav-link.active {
+  color: #ffffff; /* Warna teks aktif menjadi putih */
+}
+.nav-link.active::after {
+  content: ""; /* Pseudo-element untuk garis bawah */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Jarak antara teks dan underline */
+  height: 2px; /* Ketebalan underline */
+  background-color: #b8860b; /* Warna underline */
+  animation: underline-in 0.5s ease-in-out forwards; /* Animasi garis bawah masuk */
+}
+@keyframes underline-in {
+  0% {
+    transform: scaleX(0); /* Mulai dari tidak terlihat */
+  }
+  100% {
+    transform: scaleX(1); /* Akhirnya tampil penuh */
+  }
+}
+
+.content {
+  padding: 80px;
+  font-size: 18px;
+}
+p {
+  text-align: justify;
+  line-height: 2;
+}
+.cipta {
+  text-align: center;
+}
+
+.daftar-isi {
+  padding: 15px;
+  border-radius: 8px; /* Sudut melengkung */
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.daftar-isi h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.daftar-isi ul {
+  list-style-type: none; /* Menghilangkan bullet */
+  padding: 0;
+}
+
+.daftar-isi ul li {
+  margin: 8px 0;
+}
+
+.daftar-isi ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #ffffff; /* Warna link */
+  font-size: 18px; /* Ukuran font link */
+  line-height: 5vh; /* Jarak antar baris teks disesuaikan dengan viewport */
+  display: block; /* Memastikan link mengambil seluruh lebar li */
+  width: 100%; /* Link mengambil seluruh lebar li */
+  padding: 10px 50px; /* Menambahkan padding agar link lebih nyaman */
+  transition: all 0.3s ease;
+}
+
+.daftar-isi ul li a:hover {
+  color: #b8860b; /* Warna lebih gelap saat di-hover */
+  text-decoration: underline; /* Tambahkan garis bawah saat di-hover */
+  padding-left: 10px;
+}
+
+/* Menambahkan scroll-margin-top pada setiap elemen target */
+#pendahuluan,
+#pengertian,
+#sifat,
+#metode {
+  scroll-margin-top: 100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+.contoh {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  color: #b8860b;
+  border-left: 4px solid #b8860b;
+  padding-left: 10px;
+}
+
+h5 {
+  color: #b8860b;
+  border-left: 4px solid #b8860b;
+  padding-left: 10px;
+}
+
+.soal p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #b8860b;
+  color: #000000;
+}
+
+.btn:hover {
+  background-color: #825f07;
+  color: #000000;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparan gelap */
+  color: #fff; /* Warna teks putih agar kontras */
+  border-radius: 8px; /* Sudut melengkung */
+  border: 2px solid rgb(255, 255, 255); /* Border putih */
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/Soal Latihan Limit Fungsi 1/style.css" />
+    <title>StudyFun-Quiz</title>
+  </head>
+  <body class="bg-dark text-light">
+    <!--Start Navbar-->
+    <nav
+      class="navbar navbar-expand-lg sticky-top text-light navbar-dark"
+      style="background-color: rgba(17, 13, 13, 0.804); font-size: 20px"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand custom-brand"
+          style="font-size: 30px"
+          href="/index.html"
+          >StudyFun</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/lern/index.html">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/kalkulator/index.html">Kalkulator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Soal Latihan Limit Fungsi 1/index.html">Kuis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">Tim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End Navbar-->
+
+    <div class="quiz-container mt-4" id="start-screen">
+      <h1 class="h1-latsol">Latihan Soal Limit Aljabar</h1>
+      <button class="tombol" onclick="startQuiz()">Mulai Latihan</button>
+  </div>
+  
+  <div class="quiz-container" id="quiz-screen" style="display: none;">
+      <h1 class="h1-latsol">Pertanyaan</h1>
+      <p id="question-text"></p>
+      <div class="options">
+          <button class="option" onclick="selectAnswer(0)">Pilihan 1</button>
+          <button class="option" onclick="selectAnswer(1)">Pilihan 2</button>
+          <button class="option" onclick="selectAnswer(2)">Pilihan 3</button>
+          <button class="option" onclick="selectAnswer(3)">Pilihan 4</button>
+      </div>
+      <div class="navigation">
+          <button class="tombol" id="back-btn" onclick="prevQuestion()">Kembali</button>
+          <button class="tombol" id="skip-btn" onclick="skipQuestion()">Skip</button>
+          <button class="tombol" id="next-btn" onclick="nextQuestion()">Next</button>
+      </div>
+      <p id="progress"></p>
+  </div>
+  
+  <div class="quiz-container" id="score-screen" style="display: none;">
+      <h1 class="h1-latsol">Hasil Latihan</h1>
+      <p id="score-text"></p>
+      <h2 class="h2-latsol">Jawaban yang Benar</h2>
+      <ul id="correct-answers"></ul>
+      <button class="tombol" onclick="restartQuiz()">Ulangi Latihan</button>
+  </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="/Soal Latihan Limit Fungsi 1/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

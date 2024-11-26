@@ -1,0 +1,117 @@
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Memberikan jarak antar item navbar */
+}
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Menghilangkan margin pada item terakhir */
+}
+.nav-link {
+  padding: 10 15px; /* Menambahkan padding pada link untuk membuatnya lebih lebar */
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000; 
+  background-color: #b8860b;
+  border-radius: 5px;
+}
+
+.custom-brand {
+    color: #b8860b;
+    font-weight: bold;
+    text-decoration: none;
+}
+.custom-brand:hover{
+    color: #b8860b;
+}
+
+.nav-link {
+  color: #f8f9fa; /* Warna teks default navbar */
+  text-decoration: none; /* Hilangkan underline default */
+  position: relative; /* Dibutuhkan untuk pseudo-element */
+}
+.nav-link.active {
+  color: #ffffff; /* Warna teks aktif menjadi putih */
+}
+.nav-link.active::after {
+  content: ""; /* Harus ada konten */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: #b8860b;
+  animation: underline-in 0.5s ease-in-out forwards;
+}
+
+@keyframes underline-in {
+  0% {
+    transform: scaleX(0); /* Mulai dari tidak terlihat */
+  }
+  100% {
+    transform: scaleX(1); /* Akhirnya tampil penuh */
+  }
+}
+
+.quiz-container {
+  text-align: center;;
+  padding: 20px;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.tombol{
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #b8860b;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #9e7307;
+  transform: scale(1.05);
+}
+
+.options button {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.options button.selected {
+  background-color: #aeb0b3;
+  color: #333;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation button {
+  margin: 0 10px;
+}
+
+.h1-latsol, .h2-latsol {
+  margin-bottom: 20px;
+}
+
+#progress {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+

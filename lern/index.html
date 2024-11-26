@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="/lern/style.css" />
+    <title>Studyfun_Learn</title>
+  </head>
+  <body class="bg-dark text-light">
+    <!--Start Navbar-->
+    <nav
+      class="navbar navbar-expand-lg sticky-top text-light navbar-dark"
+      style="background-color: rgba(17, 13, 13, 0.804); font-size: 20px"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand custom-brand"
+          style="font-size: 30px"
+          href="/index.html"
+          >StudyFun</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/lern/index.html">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/kalkulator/index.html">Kalkulator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Soal Latihan Limit Fungsi 1/index.html"
+                >Kuis</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">Tim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <div class="content mt-4">
+      <h1 class="text-center fw-bold" style="-webkit-text-fill-color: #b8860b">
+        Limit Fungsi Aljabar
+      </h1>
+      <div class="row g-0 bg-body-dark position-relative mt-4">
+        <div class="col-md-8 p-3 ps-md-0">
+          <h4 id="pendahuluan" class="mt-0">Apa yang akan dipelajari?</h4>
+          <p class="mt-2">
+            &nbsp;&nbsp;&nbsp;&nbsp; Website ini dirancang untuk membantu Anda
+            memahami konsep limit fungsi aljabar, yang merupakan bagian penting
+            dalam kalkulus. Dalam halaman ini, Anda akan mempelajari cara
+            menentukan limit fungsi aljabar dengan berbagai metode, seperti
+            substitusi langsung, dan pemfaktoran, untuk menangani berbagai
+            bentuk permasalahan. Penjelasan dimulai dengan konsep dasar limit
+            dan bagaimana fungsi berperilaku saat mendekati nilai tertentu. Anda
+            juga akan mempelajari cara menyelesaikan limit yang menghasilkan
+            bentuk tak tentu (0/0) dengan langkah-langkah sederhana dan jelas,
+            yang membantu Anda memahami bagaimana fungsi berperilaku saat
+            variabel mendekati nilai yang sangat besar atau sangat kecil. Dengan
+            penjelasan yang mudah dipahami, contoh soal, dan latihan interaktif,
+            website ini bertujuan untuk membantu Anda menguasai limit fungsi
+            aljabar secara menyeluruh.<br />
+          </p>
+        </div>
+        <div class="daftar-isi col-md-4 mb-md-0 p-md-4 bg-dark">
+          <h4 class="text-center">Daftar Isi</h4>
+          <ul>
+            <li><a href="#pendahuluan">Pendahuluan</a></li>
+            <li><a href="#pengertian">Pengertian Limiit</a></li>
+            <li><a href="#sifat">Sifat - Sifat Limit Aljabar</a></li>
+            <li><a href="#metode">Metode Penyelesaian</a></li>
+            <li><a href="/kalkulator/#start-screen">Kalkulator</a></li>
+          </ul>
+        </div>
+        <div class="mt-4 ps-md-0">
+          <h4 id="pengertian"><strong>Pengertian Limit</strong></h4>
+          <p class="mt-2">
+            &nbsp;&nbsp;&nbsp;&nbsp; <strong>Limit</strong> adalah suatu nilai
+            pendekatan fungsi tertentu. Limit dianggap sebagai nilai yang menuju
+            suatu batas. Limit adalah suatu batas menggunakan konsep pendekatan
+            fungsi. Pengertian lain limit yaitu nilai yang didekati fungsi saat
+            suatu titik mendekati nilai tertentu. Mengutip dari Gramedia.com,
+            limit dianggap sebagai nilai menuju suatu batas. Disebut sebagai
+            batas karena dekat tetapi tidak bisa dicapai. Mengapa limit harus
+            didekati? Karena suatu fungsi biasanya tidak terdefinisikan oleh
+            titik-titik tertentu. Meski, suatu fungsi seringkali tidak
+            terdefinisikan oleh titik-titik tertentu, tapi masih bisa dicari
+            berupa nilai yang didekati oleh fungsi.<br />
+          </p>
+          <h4 id="sifat" class="mt-4">
+            <strong>Sifat Sifat Limit Fungsi Aljabar</strong>
+          </h4>
+          <ol class="mt-4">
+            <li style="font-size: small">
+              Limit Konstanta: \[\lim_{x \to c} k = k\]
+            </li>
+            <li style="font-size: small">
+              Limit Variabel: \[\lim_{x \to c} x = c\]
+            </li>
+            <li style="font-size: small">
+              Limit Perkalian dengan Konstanta: \[\lim_{x \to c} k f(x) = k
+              \lim_{x \to c} f(x)\]
+            </li>
+            <li style="font-size: small">
+              Limit Jumlah Fungsi: \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to
+              c} f(x) + \lim_{x \to c} g(x)\]
+            </li>
+            <li style="font-size: small">
+              Limit Selisih Fungsi: \[\lim_{x \to c} [f(x) - g(x)] = \lim_{x \to
+              c} f(x) - \lim_{x \to c} g(x)\]
+            </li>
+            <li style="font-size: small">
+              Limit Hasil Kali Fungsi: \[\lim_{x \to c} [f(x) \cdot g(x)] =
+              \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
+            </li>
+            <li style="font-size: small">
+              Limit Hasil Bagi Fungsi: \[\lim_{x \to c} \frac{f(x)}{g(x)} =
+              \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}, \text{ asalkan }
+              \lim_{x \to c} g(x) \neq 0\]
+            </li>
+            <li style="font-size: small">
+              Limit Pangkat Fungsi: \[\lim_{x \to c} [f(x)]^n = [\lim_{x \to c}
+              f(x)]^n\]
+            </li>
+            <li style="font-size: x-small;">
+              Limit Akar Fungsi: \[\lim_{x \to c} \sqrt[n]{f(x)} =
+              \sqrt[n]{\lim_{x \to c} f(x)}, \text{ asal } \lim_{x \to c} f(x) >
+              0 \text{ jika n genap}\]
+            </li>
+          </ol>
+          <h4 id="metode" class="mt-4"><strong>Metode Penyelesaian</strong></h4>
+          <ol>
+            <li>Metode Subtitusi</li>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; Metode substitusi dalam limit adalah
+              langkah pertama yang digunakan untuk menentukan nilai limit suatu
+              fungsi. Caranya adalah dengan menggantikan nilai \( x \) yang
+              mendekati titik limit ke dalam fungsi secara langsung. Jika hasil
+              substitusi langsung menghasilkan nilai yang terdefinisi, maka
+              nilai limit tersebut adalah hasil substitusi tersebut. Namun, jika
+              substitusi langsung menghasilkan bentuk tak tentu seperti \(
+              \frac{0}{0} \), \( \frac{\infty}{\infty} \), atau bentuk lainnya
+              yang tidak dapat terdefinisi, maka metode substitusi tidak dapat
+              digunakan dan kita harus melanjutkan dengan teknik lain, seperti
+              faktorisasi untuk menyelesaikan limit tersebut.
+            </p>
+            <div class="contoh">
+              <h5>Contoh Soal</h5>
+              <div class="soal">
+                <h6 class="mt-4">Contoh Soal 1</h6>
+                <p style="font-size: small">
+                  \[ \lim_{x \to 2} (3x^2 + 4x - 1) = 3(2)^2 + 4(2) - 1 \] \[ =
+                  3(4) + 8 - 1 \] \[ = 12 + 8 - 1 \] \[ = 19 \]
+                </p>
+                <h6 class="mt-4">Contoh Soal 2</h6>
+                <p style="font-size: small">
+                  \[ \lim_{x \to 3} (2x^2 - 5x + 7) = 2(3)^2 - 5(3) + 7 \] \[ =
+                  2(9) - 15 + 7 \] \[ = 18 - 15 + 7 \] \[ = 10 \]
+                </p>
+              </div>
+            </div>
+            <li>Metode Faktorisasi</li>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; Metode faktorisasi dalam limit adalah
+              salah satu teknik yang digunakan untuk menyelesaikan limit fungsi
+              aljabar ketika substitusi langsung menghasilkan bentuk tak tentu,
+              seperti \( \frac{0}{0} \). Dalam metode ini, pembilang dan
+              penyebut dari fungsi difaktorkan untuk menyederhanakan bentuknya.
+              Proses faktorisasi ini bertujuan untuk menghilangkan penyebab
+              bentuk tak tentu, seperti suku-suku yang bernilai nol di pembilang
+              dan penyebut. Setelah fungsi disederhanakan, nilai limit dapat
+              ditentukan dengan cara substitusi langsung. Metode ini sangat
+              berguna untuk menyelesaikan limit fungsi yang melibatkan
+              polinomial atau bentuk-bentuk aljabar lainnya.
+            </p>
+            <div class="contoh">
+              <h5>Contoh Soal</h5>
+              <div class="soal">
+                <h6 class="mt-4">Contoh Soal 1</h6>
+                <p style="font-size: small">
+                  \[ \lim_{x \to 3} \frac{x^2 - 9}{x - 3} = \lim_{x \to 3}
+                  \frac{(x - 3)(x + 3)}{x - 3} \] \[ = \lim_{x \to 3} (x + 3) \]
+                  \[ = 3 + 3 \] \[ = 6 \]
+                </p>
+                <h6 class="mt-4">Contoh Soal 2</h6>
+                <p style="font-size: small">
+                  \[ \lim_{x \to -2} \frac{x^2 + 5x + 6}{x + 2} = \lim_{x \to
+                  -2} \frac{(x + 2)(x + 3)}{x + 2} \] \[ = \lim_{x \to -2} (x +
+                  3) \] \[ = -2 + 3 \] \[ = 1 \]
+                </p>
+              </div>
+            </div>
+            <li>Metode Kali Sekawan</li>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; Metode kali sekawan dalam limit adalah
+              salah satu teknik yang digunakan untuk menyelesaikan limit fungsi
+              aljabar, terutama jika fungsi tersebut melibatkan bentuk akar dan
+              menghasilkan bentuk tak tentu, seperti \( \frac{0}{0} \), saat
+              substitusi langsung dilakukan. Dalam metode ini, fungsi dikalikan
+              dengan sekawan dari pembilang atau penyebut (atau keduanya) untuk
+              menghilangkan akar kuadrat atau bentuk radikal lainnya. Sekawan
+              adalah ekspresi yang sama dengan fungsi asal tetapi memiliki tanda
+              operasi yang berlawanan di antara dua suku. Setelah dikalikan
+              dengan sekawan, bentuk fungsi akan menjadi lebih sederhana, dan
+              nilai limit dapat dihitung dengan substitusi langsung. Teknik ini
+              sering digunakan untuk mengatasi kesulitan yang disebabkan oleh
+              bentuk radikal dalam fungsi.
+            </p>
+            <div class="contoh">
+              <h5>Contoh Soal</h5>
+              <div class="soal">
+                <h6 class="mt-4">Contoh Soal 1</h6>
+                <p style="font-size: x-small;">
+                  \[ \lim_{x \to 2} \frac{4 - x^2}{3 - \sqrt{x^2 + 5}} = \lim_{x
+                  \to 2} \frac{4 - x^2}{3 - \sqrt{x^2 + 5}} \cdot \frac{3 +
+                  \sqrt{x^2 + 5}}{3 + \sqrt{x^2 + 5}} \] \[ = \lim_{x \to 2}
+                  \frac{(4 - x^2)(3 + \sqrt{x^2 + 5})}{9 - (x^2 + 5)} \] \[ =
+                  \lim_{x \to 2} \frac{(4 - x^2)(3 + \sqrt{x^2 + 5})}{4 - x^2}
+                  \] \[ = \lim_{x \to 2} (3 + \sqrt{x^2 + 5}) \] \[ = 3 +
+                  \sqrt{2^2 + 5} \] \[ = 3 + \sqrt{9} \] \[ = 3 + 3 \] \[ = 6 \]
+                </p>
+                <h6 class="mt-4">Contoh Soal 2</h6>
+                <p style="font-size: small">
+                  \[ \lim_{x \to 4} \frac{\sqrt{x} - 2}{x - 4} = \lim_{x \to 4}
+                  \frac{\sqrt{x} - 2}{x - 4} \cdot \frac{\sqrt{x} + 2}{\sqrt{x}
+                  + 2} \] \[ = \lim_{x \to 4} \frac{(\sqrt{x} - 2)(\sqrt{x} +
+                  2)}{(x - 4)(\sqrt{x} + 2)} \] \[ = \lim_{x \to 4} \frac{x -
+                  4}{(x - 4)(\sqrt{x} + 2)} \] \[ = \lim_{x \to 4}
+                  \frac{1}{\sqrt{x} + 2} \] \[ = \frac{1}{\sqrt{4} + 2} \] \[ =
+                  \frac{1}{2 + 2} \] \[ = \frac{1}{4} \]
+                </p>
+              </div>
+            </div>
+          </ol>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Dengan memahami pengertian limit,
+            sifat-sifatnya, serta berbagai metode pengerjaannya, kita dapat
+            menghitung limit fungsi aljabar dengan lebih efektif dan tepat.
+            Limit fungsi aljabar membantu kita mengetahui perilaku suatu fungsi
+            ketika variabel mendekati nilai tertentu, bahkan jika fungsi
+            tersebut tidak terdefinisi secara eksplisit pada nilai tersebut.
+            Sifat-sifat limit memungkinkan kita melakukan operasi dasar seperti
+            penjumlahan, pengurangan, perkalian, dan pembagian pada fungsi yang
+            mendekati suatu nilai, asalkan hasilnya tidak menghasilkan bentuk
+            tak tentu. Dalam proses perhitungan, metode substitusi sering kali
+            menjadi langkah awal yang paling sederhana, di mana kita cukup
+            menggantikan nilai variabel ke dalam fungsi. Namun, jika substitusi
+            menghasilkan bentuk tak tentu seperti 0/0, metode lain seperti
+            pemfaktoran dapat digunakan untuk menyederhanakan fungsi tersebut
+            sehingga limitnya lebih mudah dihitung.
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Selain itu, untuk bentuk akar yang
+            menyulitkan, metode kali sekawan sangat berguna dengan cara
+            mengalikan pembilang dan penyebut dengan konjugatnya, sehingga akar
+            dapat dieliminasi dan perhitungan menjadi lebih sederhana. Dengan
+            penerapan yang tepat dari metode-metode tersebut, kita tidak hanya
+            memahami konsep limit secara teori, tetapi juga dapat
+            mengaplikasikannya untuk menyelesaikan berbagai masalah matematika
+            dengan cara yang sistematis dan logis.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5>Kalkulator Limit Fungsi Aljabar</h5>
+              <p class="card-text">
+                Yuk, coba fitur Kalkulator Limit Fungsi Aljabar di website kami!
+                Dengan alat ini, Anda bisa menghitung limit fungsi aljabar
+                secara cepat dan akurat. Cocok untuk membantu belajar atau
+                memeriksa hasil perhitungan Anda. Jangan lewatkan kesempatan
+                untuk belajar limit dengan lebih mudah dan interaktif!.
+              </p>
+              <a href="/kalkulator/index.html" class="btn w-100">Coba</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5>Kuis Limit Fungsi Aljabar</h5>
+              <p class="card-text">
+                Uji pemahamanmu dengan mencoba **Kuis Limit Fungsi Aljabar** di
+                website kami! Fitur ini dirancang untuk membantu kamu mengasah
+                kemampuan dan mengevaluasi pemahaman tentang konsep limit secara
+                interaktif. Tantang dirimu dan lihat sejauh mana kamu bisa
+                menjawab soal-soal menarik yang telah kami siapkan. Ayo mulai
+                sekarang!.
+              </p>
+              <a
+                href="/Soal Latihan Limit Fungsi 1/index.html"
+                class="btn w-100"
+                >Coba</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+      "
+    >
+      <p class="cipta">
+        &copy; <span id="current-year"></span> StudyFun Kelompok 7 Kalkulus I.
+        All rights reserved.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="/lern/script.js"></script>
+  </body>
+</html>
